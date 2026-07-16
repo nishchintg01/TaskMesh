@@ -3,11 +3,15 @@ TaskMesh App Main Module
 """
 
 from fastapi import FastAPI
-from app.api.v1.endpoints.health import router as health_router
+from app.api.v1.router import router as api_router
 
 # Initialize FastAPI Instance
-app = FastAPI()
+app = FastAPI(
+    title="TaskMesh",
+    version="1.0",
+    docs_url="/docs"
+)
 
 
-# Attach Health Endpoint to FastAPI Instance
-app.include_router(health_router)
+# Attach Router Endpoints
+app.include_router(api_router)

@@ -2,6 +2,8 @@
 FastAPI Health Routing Module
 """
 from fastapi import APIRouter
+from app.schemas.health.response import HealthResponse
+
 
 router = APIRouter(
     prefix="/health",
@@ -9,7 +11,7 @@ router = APIRouter(
 )
 
 
-@router.get("/")
+@router.get("/", response_model = HealthResponse)
 async def health():
     """Function to return APP Health
 

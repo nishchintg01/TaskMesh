@@ -3,7 +3,7 @@ TaskMesh App Main Module
 """
 
 from fastapi import FastAPI
-from app.api.v1.endpoints.router import router as api_router
+from app.api.v1.router import router as api_router
 
 # Initialize FastAPI Instance
 app = FastAPI(

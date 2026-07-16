@@ -5,3 +5,7 @@
 
 # Ignore Environment Secrets
 *.env
+
+# Exclude pyache files
+__pycache__/
+*.py[cod]

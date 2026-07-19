@@ -18,7 +18,8 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
 
     model_config = SettingsConfigDict(
-        env_file=".env"
+        env_file=".env",
+        extra="ignore"
     )
 
 # Initilize Settings class object

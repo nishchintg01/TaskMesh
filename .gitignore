@@ -6,6 +6,11 @@
 # Ignore Environment Secrets
 *.env
 
-# Exclude pyache files
+# ==========================================
+# Python Caches and Bytecode
+# ==========================================
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+*.pyc

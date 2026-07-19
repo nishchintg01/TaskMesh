@@ -6,7 +6,7 @@ from app.api.v1.router import router as api_router
 from app.core.config import settings
 from app.core.lifecycle import lifespan
 
-def create_app():
+def create_app() -> FastAPI:
     """
     Function to Initialize FastAPI App Instance
     """
